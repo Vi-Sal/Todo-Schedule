@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Schedule</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="schedule-container">
+			<form action="" class="ip-container">
+				<div class="todo-container">
+					<input type="text" class="ip-todo" placeholder="Enter todo" />
+					<select name="" id="sl-time">
+						<option value="" disabled selected>TIME</option>
+						<option class="op-status" value="MORNING">MORNING</option>
+						<option class="op-status" value="AFTERNOON">AFTERNOON</option>
+						<option class="op-status" value="EVENING">EVENING</option>
+						<option class="op-status" value="NIGHT">NIGHT</option>
+					</select>
+
+					<select name="" id="sl-subject">
+						<option value="" disabled selected>SUBJECT</option>
+						<option class="op-status" value="HTML">HTML</option>
+						<option class="op-status" value="CSS">CSS</option>
+						<option class="op-status" value="BOOTSTRAP">BOOTSTRAP</option>
+						<option class="op-status" value="JAVASCRIPT">
+							JAVASCRIPT
+						</option>
+					</select>
+					<select name="" id="sl-status">
+						<option value="" disabled selected>STATUS</option>
+						<option class="op-st op-st-pending" value="pending">
+							PENDING
+						</option>
+						<option class="op-st op-st-process" value="processing">
+							PROCESSING
+						</option>
+						<option class="op-st op-st-completed" value="completed">
+							COMPLETED
+						</option>
+						<option class="op-st op-st-reject" value="reject">
+							REJECT
+						</option>
+					</select>
+					<button class="btn-add">ADD</button>
+				</div>
+				<div class="modify-container">
+					<div class="search-container">
+						<div class="search-icon">
+							<img src="img/search-icon.png" alt="" />
+						</div>
+						<input type="text" class="ip-search" placeholder="Search" />
+					</div>
+					<button class="btn-clear">Clear</button>
+					<button class="btn-save">SAVE</button>
+				</div>
+			</form>
+			<div class="list-container">
+				<ul class="header">
+					<li>NO</li>
+					<li>NAME</li>
+					<li>TIME</li>
+					<li>SUBJECT</li>
+					<li>STATUS</li>
+					<li>EVENT</li>
+				</ul>
+				<ul class="todos-list">
+					<ul class="todo">
+						<li class="id">#1</li>
+						<li name="name" class="name">STRUCTURE</li>
+						<li class="time">MORNING</li>
+						<li class="subject">HTML</li>
+						<li>
+							<button class="btn btn-completed">COMPLETED</button>
+						</li>
+						<li>
+							<button class="btn btn-edit">EDIT</button>
+							<button class="btn btn-delete">DELETE</button>
+						</li>
+					</ul>
+					<ul class="todo">
+						<li class="id">#2</li>
+						<li name="name" class="name">FORM LOGIN</li>
+						<li class="time">MORNING</li>
+						<li class="subject">CSS</li>
+						<li>
+							<button class="btn btn-processing">PROCESSING</button>
+						</li>
+						<li>
+							<button class="btn btn-edit">EDIT</button>
+							<button class="btn btn-delete">DELETE</button>
+						</li>
+					</ul>
+					<ul class="todo">
+						<li class="id">#3</li>
+						<li name="name" class="name">NIKE-SHOES</li>
+						<li class="time">MORNING</li>
+						<li class="subject">BOOTSTRAP</li>
+						<li>
+							<button class="btn btn-processing">PROCESSING</button>
+						</li>
+						<li>
+							<button class="btn btn-edit">EDIT</button>
+							<button class="btn btn-delete">DELETE</button>
+						</li>
+					</ul>
+				</ul>
+			</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
